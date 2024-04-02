@@ -1,37 +1,36 @@
-# CRUD de Películas
+# Movie CRUD
 
-Este es un CRUD (Create, Read, Update, Delete) para gestionar películas utilizando Python con FastAPI y MongoDB.
+This is a CRUD (Create, Read, Update, Delete) for managing movies using Python with FastAPI and MongoDB.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
 - MongoDB
-- Paquetes Python: `fastapi`, `pymongo`
+- Python Packages: `fastapi`, `pymongo`
 
-## Estructura del Proyecto
+## Project Structure
 
-- `db/`: Carpeta que contiene el cliente de MongoDB y la configuración de la base de datos.
-- `model/`: Carpeta que contiene la definición del modelo de datos.
-- `schema/`: Carpeta que contiene los esquemas de datos.
-- `main.py`: Archivo principal que contiene la lógica de la aplicación.
+- `db/`: Folder containing the MongoDB client and database configuration.
+- `model/`: Folder containing the data model definition.
+- `schema/`: Folder containing the data schemas.
+- `main.py`: Main file containing the application logic.
 
-## Funcionamiento
+## Functionality
 
-1. **Crear una película**: 
-    - Para agregar una nueva película, se utiliza la función `insert_film` pasando los datos de la película como parámetro. Esto insertará los datos en la base de datos MongoDB y devolverá el ID de la película recién creada.
+1. **Create a movie**: 
+    - To add a new movie, use the `insert_film` function passing the movie data as a parameter. This will insert the data into the MongoDB database and return the ID of the newly created movie.
 
-2. **Obtener una película por ID**:
-    - Utilizando la función `get_film`, se puede obtener una película específica proporcionando su ID como parámetro. Esto recuperará los datos de la película desde la base de datos y los devolverá como un objeto JSON.
+2. **Get a movie by ID**:
+    - Using the `get_film` function, you can retrieve a specific movie by providing its ID as a parameter. This will retrieve the movie data from the database and return it as a JSON object.
 
-3. **Actualizar una película**:
-    - Para actualizar una película existente, se utiliza la función `update_film`, pasando el ID de la película a actualizar y los nuevos datos de la película. Esto actualizará los datos en la base de datos y devolverá la película actualizada.
+3. **Update a movie**:
+    - To update an existing movie, use the `update_film` function, passing the ID of the movie to update and the new movie data. This will update the data in the database and return the updated movie.
 
-4. **Eliminar una película**:
-    - Utilizando la función `delete_film`, se puede eliminar una película proporcionando su ID como parámetro. Esto eliminará la película de la base de datos.
+4. **Delete a movie**:
+    - Using the `delete_film` function, you can delete a movie by providing its ID as a parameter. This will delete the movie from the database.
 
-5. **Listar todas las películas**:
-    - La función `list_films` se encarga de listar todas las películas almacenadas en la base de datos. Devuelve una lista de todas las películas en formato JSON.
-
+5. **List all movies**:
+    - The `list_films` function is responsible for listing all movies stored in the database. It returns a list of all movies in JSON format.
 
 
 
